@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0000000-0000-0000-0000-000000000001">
+  <producedTypes>
+    <recordType typeId="d0000001-0001-0001-0001-000000000001" valueTypeId="d0000001-0001-0001-0002-000000000001"/>
+    <selectionType typeId="d0000001-0001-0001-0001-000000000002" valueTypeId="d0000001-0001-0001-0002-000000000002"/>
+    <listType typeId="d0000001-0001-0001-0001-000000000003" valueTypeId="d0000001-0001-0001-0002-000000000003"/>
+    <managerType typeId="d0000001-0001-0001-0001-000000000004" valueTypeId="d0000001-0001-0001-0002-000000000004"/>
+  </producedTypes>
+  <name>ЭкземплярыКниг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экземпляры книг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Nonperiodical</periodicity>
+  <writeMode>Independent</writeMode>
+  <dimensions uuid="d0000001-0001-0000-0000-000000000001">
+    <name>КодЭкземпляра</name>
+    <synonym><key>ru</key><value>Код экземпляра</value></synonym>
+    <type><types>String</types><stringQualifiers><length>20</length></stringQualifiers></type>
+    <denyIncompleteValues>false</denyIncompleteValues>
+  </dimensions>
+  <resources uuid="d0000001-0002-0000-0000-000000000001">
+    <name>Книга</name>
+    <synonym><key>ru</key><value>Книга</value></synonym>
+    <type><types>CatalogRef.Книги</types></type>
+  </resources>
+  <resources uuid="d0000001-0002-0000-0000-000000000002">
+    <name>МестоХранения</name>
+    <synonym><key>ru</key><value>Место хранения</value></synonym>
+    <type><types>CatalogRef.МестаХранения</types></type>
+  </resources>
+  <attributes uuid="d0000001-0003-0000-0000-000000000001">
+    <name>Состояние</name>
+    <synonym><key>ru</key><value>Состояние</value></synonym>
+    <type><types>String</types><stringQualifiers><length>50</length></stringQualifiers></type>
+  </attributes>
+  <attributes uuid="d0000001-0003-0000-0000-000000000002">
+    <name>Статус</name>
+    <synonym><key>ru</key><value>Статус</value></synonym>
+    <type><types>String</types><stringQualifiers><length>50</length></stringQualifiers></type>
+  </attributes>
+</mdclass:InformationRegister>

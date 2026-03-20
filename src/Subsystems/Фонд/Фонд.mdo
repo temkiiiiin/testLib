@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0000000-0000-0000-0000-000000000002">
+  <name>Фонд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фонд</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.МестаХранения</content>
+  <content>Document.ПоступлениеКниг</content>
+  <content>Document.СписаниеКниг</content>
+  <content>AccumulationRegister.ФондКниг</content>
+  <content>InformationRegister.ЭкземплярыКниг</content>
+</mdclass:Subsystem>

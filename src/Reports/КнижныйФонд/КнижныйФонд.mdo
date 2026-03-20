@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0000000-0000-0000-0000-000000000001">
+  <producedTypes>
+    <managerType typeId="f0000001-0001-0001-0001-000000000001" valueTypeId="f0000001-0001-0001-0002-000000000001"/>
+  </producedTypes>
+  <name>КнижныйФонд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книжный фонд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

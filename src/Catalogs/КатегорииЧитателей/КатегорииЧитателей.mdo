@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0000000-0000-0000-0000-000000000005">
+  <producedTypes>
+    <objectType typeId="b0000005-0001-0001-0001-000000000001" valueTypeId="b0000005-0001-0001-0002-000000000001"/>
+    <refType typeId="b0000005-0001-0001-0001-000000000002" valueTypeId="b0000005-0001-0001-0002-000000000002"/>
+    <selectionType typeId="b0000005-0001-0001-0001-000000000003" valueTypeId="b0000005-0001-0001-0002-000000000003"/>
+    <listType typeId="b0000005-0001-0001-0001-000000000004" valueTypeId="b0000005-0001-0001-0002-000000000004"/>
+    <managerType typeId="b0000005-0001-0001-0001-000000000005" valueTypeId="b0000005-0001-0001-0002-000000000005"/>
+  </producedTypes>
+  <name>КатегорииЧитателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории читателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииЧитателей.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b0000005-0001-0000-0000-000000000001">
+    <name>МаксКнигНаРуках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс. книг на руках</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0000005-0001-0000-0000-000000000002">
+    <name>МаксСрокДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс. срок (дней)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

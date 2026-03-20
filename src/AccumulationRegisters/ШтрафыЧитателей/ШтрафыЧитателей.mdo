@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0000000-0000-0000-0000-000000000003">
+  <producedTypes>
+    <recordType typeId="c0000003-0001-0001-0001-000000000001" valueTypeId="c0000003-0001-0001-0002-000000000001"/>
+    <selectionType typeId="c0000003-0001-0001-0001-000000000002" valueTypeId="c0000003-0001-0001-0002-000000000002"/>
+    <listType typeId="c0000003-0001-0001-0001-000000000003" valueTypeId="c0000003-0001-0001-0002-000000000003"/>
+    <managerType typeId="c0000003-0001-0001-0001-000000000004" valueTypeId="c0000003-0001-0001-0002-000000000004"/>
+  </producedTypes>
+  <name>ШтрафыЧитателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрафы читателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Balance</registerType>
+  <dimensions uuid="c0000003-0001-0000-0000-000000000001">
+    <name>Читатель</name>
+    <synonym><key>ru</key><value>Читатель</value></synonym>
+    <type><types>CatalogRef.Читатели</types></type>
+    <denyIncompleteValues>true</denyIncompleteValues>
+  </dimensions>
+  <resources uuid="c0000003-0002-0000-0000-000000000001">
+    <name>Сумма</name>
+    <synonym><key>ru</key><value>Сумма</value></synonym>
+    <type><types>Number</types><numberQualifiers><precision>15</precision><scale>2</scale></numberQualifiers></type>
+  </resources>
+</mdclass:AccumulationRegister>

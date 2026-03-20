@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0000000-0000-0000-0000-000000000006">
+  <producedTypes>
+    <objectType typeId="b0000006-0001-0001-0001-000000000001" valueTypeId="b0000006-0001-0001-0002-000000000001"/>
+    <refType typeId="b0000006-0001-0001-0001-000000000002" valueTypeId="b0000006-0001-0001-0002-000000000002"/>
+    <selectionType typeId="b0000006-0001-0001-0001-000000000003" valueTypeId="b0000006-0001-0001-0002-000000000003"/>
+    <listType typeId="b0000006-0001-0001-0001-000000000004" valueTypeId="b0000006-0001-0001-0002-000000000004"/>
+    <managerType typeId="b0000006-0001-0001-0001-000000000005" valueTypeId="b0000006-0001-0001-0002-000000000005"/>
+  </producedTypes>
+  <name>Книги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Книги.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>300</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b0000006-0001-0000-0000-000000000001">
+    <name>ISBN</name>
+    <synonym>
+      <key>ru</key>
+      <value>ISBN</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0000006-0001-0000-0000-000000000002">
+    <name>Жанр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Жанр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Жанры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0000006-0001-0000-0000-000000000003">
+    <name>Издательство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Издательство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Издательства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0000006-0001-0000-0000-000000000004">
+    <name>ГодИздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год издания</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0000006-0001-0000-0000-000000000005">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>0</length>
+        <allowedLength>Variable</allowedLength>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="b0000006-0002-0000-0000-000000000001">
+    <producedTypes>
+      <objectType typeId="b0000006-0002-0001-0001-000000000001" valueTypeId="b0000006-0002-0001-0002-000000000001"/>
+      <rowType typeId="b0000006-0002-0001-0001-000000000002" valueTypeId="b0000006-0002-0001-0002-000000000002"/>
+    </producedTypes>
+    <name>Авторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторы</value>
+    </synonym>
+    <attributes uuid="b0000006-0002-0000-0000-000000000002">
+      <name>Автор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Автор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Авторы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="b0000006-0002-0000-0000-000000000003">
+      <name>Роль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

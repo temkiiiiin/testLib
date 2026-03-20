@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0000000-0000-0000-0000-000000000004">
+  <name>Выдача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВыдачаКниги</content>
+  <content>Document.ВозвратКниги</content>
+  <content>Document.БронированиеКниги</content>
+  <content>AccumulationRegister.КнигиНаРуках</content>
+  <content>AccumulationRegister.ШтрафыЧитателей</content>
+  <content>InformationRegister.ИсторияВыдач</content>
+</mdclass:Subsystem>

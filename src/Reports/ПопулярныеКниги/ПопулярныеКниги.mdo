@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0000000-0000-0000-0000-000000000004">
+  <producedTypes>
+    <managerType typeId="f0000004-0001-0001-0001-000000000001" valueTypeId="f0000004-0001-0001-0002-000000000001"/>
+  </producedTypes>
+  <name>ПопулярныеКниги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Популярные книги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

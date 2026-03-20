@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa000000-0000-0000-0000-000000000001">
+  <producedTypes>
+    <objectType typeId="aa000001-0001-0001-0001-000000000001" valueTypeId="aa000001-0001-0001-0002-000000000001"/>
+    <managerType typeId="aa000001-0001-0001-0001-000000000002" valueTypeId="aa000001-0001-0001-0002-000000000002"/>
+  </producedTypes>
+  <name>ЗаполнениеТестовыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение тестовых данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="aa000001-0002-0000-0000-000000000001">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0000000-0000-0000-0000-000000000001">
+  <name>Каталог</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Авторы</content>
+  <content>Catalog.Издательства</content>
+  <content>Catalog.Жанры</content>
+  <content>Catalog.Книги</content>
+</mdclass:Subsystem>

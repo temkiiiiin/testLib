@@ -10,6 +10,7 @@
     <value>Заполнение тестовых данных</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеТестовыхДанных.Form.Форма</defaultForm>
   <forms uuid="aa000001-0002-0000-0000-000000000001">
     <name>Форма</name>
     <synonym>

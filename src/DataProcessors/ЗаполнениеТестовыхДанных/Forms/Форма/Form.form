@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:Button">
     <name>КнопкаЗаполнить</name>
     <id>1</id>
@@ -8,65 +8,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <extendedTooltip>
-      <name>КнопкаЗаполнитьРасширеннаяПодсказка</name>
-      <id>3</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>КнопкаЗаполнитьКонтекстноеМеню</name>
-      <id>2</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <commandName>ЗаполнитьТестовыеДанные</commandName>
-    <extInfo xsi:type="form:ButtonExtInfo"/>
-  </items>
-  <items xsi:type="form:FormField">
-    <name>ПолеСообщений</name>
-    <id>4</id>
-    <visible>true</visible>
-    <enabled>false</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Результат</segments>
-    </dataPath>
-    <extendedTooltip>
-      <name>ПолеСообщенийРасширеннаяПодсказка</name>
-      <id>6</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>ПолеСообщенийКонтекстноеМеню</name>
-      <id>5</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <extendedEditMultipleValues>true</extendedEditMultipleValues>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-      <multiLine>true</multiLine>
-    </extInfo>
+    <type>UsualButton</type>
+    <commandName>Form.Command.ЗаполнитьТестовыеДанные</commandName>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
@@ -83,34 +26,25 @@
   <enabled>true</enabled>
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
-  <attributes>
-    <name>Результат</name>
-    <id>1</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers>
-        <length>0</length>
-        <allowedLength>Variable</allowedLength>
-      </stringQualifiers>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <commands>
+  <formCommands>
     <name>ЗаполнитьТестовыеДанные</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить тестовые данные</value>
+    </title>
     <id>1</id>
-    <action xsi:type="form:FormActionHandler">
-      <name>ЗаполнитьТестовыеДанные</name>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаполнитьТестовыеДанные</name>
+      </handler>
     </action>
-    <title>Заполнить тестовые данные</title>
-  </commands>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
-  <extInfo xsi:type="form:DataProcessorFormExtInfo"/>
 </form:Form>

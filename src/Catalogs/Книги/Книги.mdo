@@ -19,7 +19,7 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <codeLength>9</codeLength>
-  <descriptionLength>300</descriptionLength>
+  <descriptionLength>149</descriptionLength>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <autonumbering>true</autonumbering>
@@ -100,10 +100,7 @@
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers>
-        <length>0</length>
-        <allowedLength>Variable</allowedLength>
-      </stringQualifiers>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -132,9 +129,8 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
       <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="b0000006-0002-0000-0000-000000000003">
       <name>Роль</name>
@@ -150,9 +146,8 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:StringValue"/>
-      <fullTextSearch>Use</fullTextSearch>
       <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
 </mdclass:Catalog>
